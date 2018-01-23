@@ -1,0 +1,52 @@
+{
+  "skillManifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "A simple audio streaming skill",
+          "examplePhrases": [
+            "Alexa open audio stream",
+            "Alexa play audio stream",
+            "Alexa ask audio stream to play"
+          ],
+          "kaywords":[
+            "audio streaming",
+            "music",
+            "live music"
+          ],
+          "name": "AudioSkill",
+          "description": "A simple audio streaming skill",
+          "smallIconUri": "https://s3.amazonaws.com/alexashow-desc-image/Feed-image.png",
+          "largeImageUri": "https://s3.amazonaws.com/alexashow-desc-image/512.png"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "No special instructions",
+      "category": "STREAMING_SERVICE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda/custom"
+        },
+        "interfaces":[
+          {
+
+          "type": "AUDIO_PLAYER"
+
+          }
+        ]
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions":[],
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "isExportCompliant": true,
+      "containsAds": false,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}
