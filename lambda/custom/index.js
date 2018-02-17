@@ -11,8 +11,8 @@ var streamInfo = {
   //url: "https://streaming.radionomy.com/RadioXUS?lang=en-US&appName=iTunes.m3u",
   url: "<Use your any streaming url",
   image:{
-    largeImageUrl: '<Your large icon image location>',
-    smallImageUrl: '<Your small icon image location>'
+    largeImageUrl: 'https://www.google.com/search?q=revolution+935&rlz=1C1CHBF_enUS781US781&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjOsuywq6XZAhXC6lMKHS0qAEoQ_AUIDCgD&biw=1920&bih=949#imgrc=RiO8VIjtLCRfvM:<>',
+    smallImageUrl: 'https://www.google.com/search?q=revolution+935&rlz=1C1CHBF_enUS781US781&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjOsuywq6XZAhXC6lMKHS0qAEoQ_AUIDCgD&biw=1920&bih=949#imgrc=RiO8VIjtLCRfvM:'
   }
 };
 
@@ -28,7 +28,7 @@ var handlers = {
         this.emit('PlayStream');
     },
     'PlayStream': function () {
-        this.response.speak('Enjoy').audioPlayerPlay('REPLACE_ALL', streamInfo.url, streamInfo.url, null, 0);
+        this.response.speak('Enjoy').audioPlayerPlay('REPLACE_ALL', https://www.revolution935.com/on-air/, https://www.revolution935.com/on-air/, null, 0);
         this.emit(':responseReady');
     },
     'SessionEndedRequest' : function() {
@@ -84,7 +84,7 @@ var handlers = {
         var cardImage = streamInfo.image;
         this.response.cardRenderer(cardTitle, cardContent, cardImage);
       }
-      this.response.speak('Enjoy').audioPlayerPlay('REPLACE_ALL', streamInfo.url,streamInfo.url, null, 0);
+      this.response.speak('Enjoy').audioPlayerPlay('REPLACE_ALL', https://www.revolution935.com/on-air/,https://www.revolution935.com/on-air/, null, 0);
       this.emit(':responseReady');
     },
     'PauseCommandIssued': function(){
@@ -103,7 +103,7 @@ var audioEventHandlers = {
     this.emit(':responseReady');
   },
   'PlaybackNearlyFinished': function(){
-    this.response.audioPlayerPlay('REPLACE_ALL', streamInfo.url, streamInfo.url, null, 0);
+    this.response.audioPlayerPlay('REPLACE_ALL', https://www.revolution935.com/on-air/, https://www.revolution935.com/on-air/, null, 0);
     this.emit(':responseReady');
   },
   'PlaybackFailed': function(){
